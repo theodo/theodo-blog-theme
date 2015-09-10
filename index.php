@@ -13,16 +13,6 @@
 
 get_header(); ?>
 
-  <div class="newsletter-cta">
-    <h1 class="newsletter-cta-h1">Awesome, actionable social media advice. Delivered daily.</h1>
-    <h2 class="newsletter-cta-h2">Join 31,012 good-looking folks who get our latest content first :)</h2>
-    <form class="newsletter-cta-form">
-      <input class="newsletter-cta-input" type="email" placeholder="Email Address"><button class="newsletter-cta-button" alt="Subscribe" type="submit"></button>
-      <div class="newsletter-cta-caption">And don’t worry, we hate spam too! You can unsubscribe at anytime.</div>
-    </form>
-
-  </div>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

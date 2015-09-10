@@ -36,25 +36,34 @@
 
 <body <?php body_class(); ?>>
 
-	<nav id="nav-wrap" role="navigation">
-		<ul class="top-nav">
+	<?php if ( has_nav_menu( 'primary' )  ) : ?>
+		<nav id="nav-wrap" role="navigation">
+			<?php
+				// Primary navigation menu.
+				wp_nav_menu( array(
+					'menu_class'     => 'nav-menu',
+					'theme_location' => 'primary',
+				) );
+			?>
+		</nav><!-- .main-navigation -->
+	<?php endif; ?>
+		<!--<ul class="top-nav">
 			<li><a href="http://bufferapp.com">Buffer</a></li>
 			<li><a class="rollover social" href="http://blog.bufferapp.com">Social</a></li>
 			<li><a class="rollover open" href="http://open.bufferapp.com">Open</a></li>
 			<li class="current"><a class="rollover overflow" href="http://overflow.bufferapp.com">Overflow</a></li>
 			<li><a class="rollover happiness" >Happiness</a></li>
-		</ul>
+		</ul>-->
 	</nav><!-- #navigation -->
 
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="site-branding">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home <?php bloginfo( 'name' ); ?>" class="site-title"><span class="logotype"></span><?php bloginfo( 'name' ); ?></a>
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home <?php bloginfo( 'name' ); ?>" class="site-title"><?php bloginfo( 'name' ); ?></a>
 			<div class="tagline"><?php bloginfo( 'description' ); ?></div>
 		</div>
 
-		<div class="header-sign-up">Buffer makes managing social media fun and easy. <a href="http://bufferapp.com/">Sign Up. It’s Free.</a></div>
 
 	</header><!-- #masthead -->
 
