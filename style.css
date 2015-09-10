@@ -409,21 +409,16 @@ big {
 	opacity: 1;
 }
 
-a.social:after {
-	content: "Social Media";
+.methods a:after {
+	content: "How we do";
 }
 
-a.open:after {
-	content: "Transparency";
+.lifestyle a:after {
+	content: "Last news";
 }
 
-a.overflow:after {
-	content: "Engineering";
-}
-
-a.happiness:after {
-	content: "Coming Soon";
-	font-style: italic;
+.tech a:after {
+	content: "What we do";
 }
 
 @media only screen and (max-width: 780px) {
