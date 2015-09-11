@@ -562,7 +562,7 @@ a[rel="home happiness"]:hover {
 	width: 100%;
 	z-index: 25;
 	position: absolute;
-	opacity: .9;
+	opacity: .5;
 }
 
 .featured-image {

@@ -30,7 +30,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<a id="logo" href="<?php get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" /></a>
+	<a id="logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" /></a>
 	<?php if ( has_nav_menu( 'primary' )  ) : ?>
 		<nav id="nav-wrap" role="navigation">
 			<?php
