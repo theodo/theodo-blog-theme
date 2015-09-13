@@ -24,7 +24,7 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php buffer_posted_on(); ?>
+			<?php theodo_posted_on(); ?>
 
 			<div class="share-buttons">
 

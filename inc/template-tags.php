@@ -59,7 +59,7 @@ function buffer_post_nav() {
 }
 endif;
 
-if ( ! function_exists( 'buffer_posted_on' ) ) :
+if ( ! function_exists( 'theodo_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
@@ -84,12 +84,10 @@ function theodo_posted_on() {
 		foreach( $coauthors as $coauthor ){
 			$byline .= sprintf(
 				_x( '%s', 'post author', 'buffer' ),
-				'<a class="url fn n" href="' . esc_url( get_coauthor_posts_url( $coauthor->ID ) ) . '">'
-				. '<span class="author-avatar">'
-				. coauthors_get_avatar( $coauthor )
+				'<span class="author-avatar">' . coauthors_get_avatar( $coauthor ) . '</span>'
 			);
 		}
-		$byline .= esc_html( coauthors_posts_links(", ", " & ") ) . '</span></a>';
+		$byline .= coauthors_posts_links(", ", " & ", null, null, false);
 
 	} else {
 		$byline = sprintf(
