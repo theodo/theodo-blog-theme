@@ -89,7 +89,7 @@ function theodo_posted_on() {
 				. coauthors_get_avatar( $coauthor )
 			);
 		}
-		$byline .= esc_html( coauthors_posts_links(", ", " & ") ) . '</span></a>'
+		$byline .= esc_html( coauthors_posts_links(", ", " & ") ) . '</span></a>';
 
 	} else {
 		$byline = sprintf(
