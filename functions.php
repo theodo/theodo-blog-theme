@@ -160,3 +160,14 @@ function extra_contact_info($contactmethods) {
     return $contactmethods;
 }
 add_filter('user_contactmethods', 'extra_contact_info');
+
+// co-authoring
+function hybrid_entry_author_shortcode( $attr ) {
+    $attr = shortcode_atts( array( 'before' => '', 'after' => '' ), $attr );
+    if ( function_exists( 'coauthors_posts_links' ) ) {
+        $author = 'yolo';
+    } else {
+        $author = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author_meta( 'display_name' ) ) . '">' . get_the_author_meta( 'display_name' ) . '</a></span>';
+    }
+    return $attr['before'] . $author . $attr['after'];
+}

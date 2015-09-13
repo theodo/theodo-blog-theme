@@ -46,11 +46,32 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
+<?php
+if ( function_exists( 'coauthors_posts_links' ) ) {
+    $coauthors = get_coauthors();
+?>
+	<p class="footer-byline">Written by<br/> <?php coauthors(", ", " & "); ?></p> 
+<?php
+    foreach( $coauthors as $coauthor ):
+?>
+	<div class="author-bio-avatar"><a href="<?php the_coauthor_meta('user_url'); ?>"><?php echo coauthors_get_avatar($coauthor, 80); ?></a></div>
+<?php
+    endforeach;
+    $description = get_the_coauthor_meta('description');
+?>
+    <p class="footer-author-bio">
+<?php foreach( $coauthors as $coauthor ){ echo $description[$coauthor->ID] . "<br/>";} ?>
+    </p>
+<?php
+} else {
+?>
 		<div class="author-bio-avatar"><a href="<?php the_author_meta('user_url'); ?>"><?php echo get_avatar( get_the_author_meta('ID')); ?></a></div>
 		<p class="footer-byline">Written by <a href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('display_name'); ?></a></p>
 		<p class="footer-author-bio"><?php the_author_meta('description'); ?></a></p>
-		<div class="twitter-badge"><a href="<?php the_author_meta('twitter'); ?>" class="twitter-follow-button" data-width="250" data-size="small" data-show-count="true">Follow @<?php the_author_meta('twitter'); ?></a></div>
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<?php
+}
+?>
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
