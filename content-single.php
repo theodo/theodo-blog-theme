@@ -26,7 +26,7 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-meta">
-		<?php buffer_posted_on(); ?>
+		<?php theodo_posted_on(); ?>
 	</div><!-- .entry-meta -->
 
 	<div class="entry-content">
@@ -50,7 +50,7 @@
 if ( function_exists( 'coauthors_posts_links' ) ) {
     $coauthors = get_coauthors();
 ?>
-	<p class="footer-byline">Written by<br/> <?php coauthors(", ", " & "); ?></p> 
+	<p class="footer-byline">Written by<br/> <?php coauthors(", ", " & "); ?></p>
 <?php
     foreach( $coauthors as $coauthor ):
 ?>
