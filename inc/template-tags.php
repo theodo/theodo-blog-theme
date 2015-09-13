@@ -63,7 +63,7 @@ if ( ! function_exists( 'buffer_posted_on' ) ) :
 /**
  * Prints HTML with meta information for the current post-date/time and author.
  */
-function buffer_posted_on() {
+function theodo_posted_on() {
 	$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
 
 	$time_string = sprintf( $time_string,
@@ -78,14 +78,54 @@ function buffer_posted_on() {
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
-	$byline = sprintf(
-		_x( '%s', 'post author', 'buffer' ),
-		'<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . '<span class="author-avatar">' . get_avatar( get_the_author_meta('ID')) . esc_html( get_the_author() ) . '</span></a>'
-	);
+	if ( function_exists( 'coauthors_posts_links' ) ) {
+		$coauthors = get_coauthors();
+		$byline = "";
+		foreach( $coauthors as $coauthor ){
+			$byline .= sprintf(
+				_x( '%s', 'post author', 'buffer' ),
+				'<a class="url fn n" href="' . esc_url( get_coauthor_posts_url( $coauthor->ID ) ) . '">'
+				. '<span class="author-avatar">'
+				. coauthors_get_avatar( $coauthor )
+			);
+		}
+		$byline .= esc_html( coauthors_posts_links(", ", " & ") ) . '</span></a>';
+
+	} else {
+		$byline = sprintf(
+			_x( '%s', 'post author', 'buffer' ),
+			'<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . '<span class="author-avatar">' . get_avatar( get_the_author_meta('ID')) . esc_html( get_the_author() ) . '</span></a>'
+		);
+	}
 
 
 	echo '<span class="byline"> ' . $byline . '<span class="posted-on">' . $posted_on . '</span>';
 
+}
+endif;
+
+if ( ! function_exists( 'theodo_author_description' ) ) :
+function theodo_author_description() {
+	$html = '';
+	if ( function_exists( 'coauthors_posts_links' ) ) {
+	    $coauthors = get_coauthors();
+			$html .= '<p class="footer-byline">Written by<br/>' . coauthors(", ", " & ") .'</p>';
+	    foreach( $coauthors as $coauthor ):
+				$html .= '<div class="author-bio-avatar"><a href="' . the_coauthor_meta('user_url') . '">' . coauthors_get_avatar($coauthor, 80) .'</a></div>';
+	    endforeach;
+	    $description = get_the_coauthor_meta('description');
+	    $html .= '<p class="footer-author-bio">';
+			foreach( $coauthors as $coauthor ){
+				$html .= $description[$coauthor->ID] . "<br/>";
+			}
+	    $html .= '</p>';
+	} else {
+			/**<div class="author-bio-avatar"><a href="<?php the_author_meta('user_url'); ?>"><?php echo get_avatar( get_the_author_meta('ID')); ?></a></div>
+			<p class="footer-byline">Written by <a href="<?php the_author_meta('user_url'); ?>"><?php the_author_meta('display_name'); ?></a></p>
+			<p class="footer-author-bio"><?php the_author_meta('description'); ?></a></p>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="http://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			**/
+	}
 }
 endif;
 
