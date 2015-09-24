@@ -587,26 +587,16 @@ a[rel="home happiness"]:hover {
 	position: relative;
 }
 
-.byline,
-.author-avatar img {
-	vertical-align: top;
-	display: inline;
-	font-style: italic;
+.author-avatar {
+	float: left;
 }
 
-.byline {
-	position: relative;
-}
-
-.posted-on,
-.posted-on a {
+.posted-on {
 	display: block;
-  position: relative;
-  left: 57px;
   text-transform: uppercase;
   font-size: 11px;
   font-weight: 400;
-  top: -18px;
+	padding-top: 5px;
   color: #aaa;
 }
 
