@@ -353,13 +353,13 @@ big {
 	text-align: justify;
 }
 
-#menu-navigation:after { /* used to justify nav items */
+.nav-menu:after { /* used to justify nav items */
 	content: " ";
 	display: inline-block;
 	width: 100%;
 }
 
-#menu-navigation li {
+.nav-menu li {
 	display: inline-block;
 	font-size: 0.875rem;
 	line-height: 2.75rem;
@@ -369,20 +369,20 @@ big {
 	        transition: padding-bottom 200ms ease-in-out;
 	width: 80px;
 }
-#menu-navigation li:nth-child(odd) {
+.nav-menu li:nth-child(odd) {
 	border-bottom: 6px solid #2859a2;
 }
 
-#menu-navigation li:nth-child(even) {
+.nav-menu li:nth-child(even) {
 	border-bottom: 6px solid #6FC2B7;
 }
 
-#menu-navigation li:hover,
-#menu-navigation li.current-menu-item {
+.nav-menu li:hover,
+.nav-menu li.current-menu-item {
 	padding-bottom: 0;
 }
 
-#menu-navigation a {
+.nav-menu a {
 	-webkit-transform: translateY(0);
 	        transform: translateY(0);
 	color: #8B959E;
@@ -392,14 +392,13 @@ big {
 	        transition: -webkit-transform 200ms ease-in-out, color 300ms ease;
 }
 
-#menu-navigation a:hover,
-#menu-navigation .current-menu-item a {
+.nav-menu a:hover {
 	color: #323B43;
 	-webkit-transform: translateY(-8px);
 	        transform: translateY(-8px);
 }
 
-#menu-navigation a:after {
+.nav-menu a span {
 	background: transparent;
 	color: #8B959E;
 	display: inline;
@@ -411,38 +410,31 @@ big {
 	-webkit-transition: opacity 200ms ease-in-out;
 	        transition: opacity 200ms ease-in-out;
 	width: 100px;
+	text-decoration: none;
 }
 
-#menu-navigation a:hover:after {
+.nav-menu a:focus, .nav-menu a:active {
+	border-bottom: none;
+}
+
+.nav-menu a:hover span {
 	opacity: 1;
-}
-
-.methods a:after {
-	content: "How we do";
-}
-
-.lifestyle a:after {
-	content: "Last news";
-}
-
-.tech a:after {
-	content: "What we do";
 }
 
 @media only screen and (max-width: 780px) {
 
-  #menu-navigation { padding: 0 1rem; }
+  .nav-menu { padding: 0 1rem; }
 
 }
 
 @media only screen and (max-width: 500px) {
 
-  #menu-navigation li:first-child {
+  .nav-menu li:first-child {
 		display: none;
 	}
 
-	#menu-navigation li:hover,
-	#menu-navigation li.current {
+	.nav-menu li:hover,
+	.nav-menu li.current {
 		padding-bottom: 2px;
 	}
 
