@@ -88,6 +88,7 @@ add_action( 'widgets_init', 'buffer_widgets_init' );
  */
 function buffer_scripts() {
 	wp_enqueue_style( 'buffer-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'theodo-article-style', get_template_directory_uri() . '/article.css');
 
 	wp_enqueue_script( 'buffer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
@@ -170,4 +171,11 @@ function hybrid_entry_author_shortcode( $attr ) {
         $author = '<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '" title="' . esc_attr( get_the_author_meta( 'display_name' ) ) . '">' . get_the_author_meta( 'display_name' ) . '</a></span>';
     }
     return $attr['before'] . $author . $attr['after'];
+}
+
+class Theodo_Nav_Menu_Walker extends Walker_Nav_Menu
+{
+	public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+		$output .= "tptp</li>\n";
+	}
 }

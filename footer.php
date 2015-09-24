@@ -16,7 +16,7 @@
 
 <?php wp_footer(); ?>
 
-  <span class="copyright">©215 Theodo</span>
+  <span class="copyright">&#169;2015 Theodo</span>
 
 </body>
 </html>

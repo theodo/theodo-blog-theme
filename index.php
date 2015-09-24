@@ -42,6 +42,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php buffer_paging_nav(); ?>
+<?php //buffer_paging_nav(); ?>
 
 <?php get_footer(); ?>

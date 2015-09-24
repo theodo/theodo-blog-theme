@@ -1,0 +1,223 @@
+@charset "UTF-8";
+
+#content a
+{
+  text-decoration: none;
+}
+
+
+#content hr
+{
+  background-color: #707070;
+  height: 1px;
+  margin:42px 0 24px;
+}
+
+#content div.article ul li
+{
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+#content div.article pre
+{
+  margin: 7px;
+}
+
+#content div.article h4
+{
+  margin-top: 10px;
+}
+
+
+/* cyrillej 2013-07-17 (article content readability improved) */
+#content .entry-content h2,
+#content .entry-content h3 {
+  margin: 2em 0 1em;
+}
+
+#content div.article .illustration {
+  margin: 0 auto;
+  display: block;
+}
+
+#content div.article p {
+  margin-bottom: 1em;
+}
+
+#content div.article pre {
+  margin-bottom: 1.4em;
+    word-wrap: normal;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+#content div.article pre.error {
+  color: #f00;
+}
+
+#content div.article pre .comment {
+  color: #999;
+}
+
+#content div.article pre code {
+    white-space: pre;
+}
+
+.gimme-more {
+  max-height: 200px;
+  overflow: hidden;
+  transition:max-height 1.2s;
+}
+
+.gimme-more:hover {
+  max-height: 900px;
+}
+
+.gimme-more:before {
+  content: '↓ hover for more ↓';
+  display: block;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #aaa;
+}
+
+/* nicolasgo 2015-07-27 typographic improvements */
+
+.article .meta a, .article .feedback a,
+.entry-content p a:hover, .entry-content ul li a:hover,
+.entry-content ol li a:hover,
+#content p a, #content ul a, #content ol a, #content h2 a, #content h3 a,
+.navbar .nav li.active-blue > a,
+.more_by a, .prev-next a,
+.entry-content h2 a, .entry-content h3 a {
+}
+
+
+.article p, .article ul li, .article ol li, .article p input, .article .meta, .article .feedback, .document{
+    font-size: 21px;
+    font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 30px;
+}
+
+.article .meta, .article .feedback {
+    font-size: 16px;
+}
+
+code, pre, tt {
+    font-family: "source-code-pro", monospace;
+    font-size: 14px;
+}
+
+.entry-content h1{
+    font-size: 32px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 35px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.entry-content h2{
+    font-size: 28px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 35px;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.entry-content h3{
+    font-size: 21px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 30px;
+    text-shadow: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.entry-content h4{
+    font-size: 18px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 25px;
+    text-shadow: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.entry-content blockquote{
+    font-weight: lighter;
+    font-style: italic;
+    border-left: 2px solid #181818;
+    padding-left: 20px;
+    margin-left: -22px;
+}
+
+
+.entry-content p a, .entry-content ul li a, .entry-content ol li a,
+.entry-content h2 a, .entry-content h3 a, .entry-content h4 a{
+    color: #181818!important;
+    text-decoration: none!important;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 93%, #1290E8 93%);
+}
+
+.entry-content p a:hover, .entry-content ul li a:hover, .entry-content ol li a:hover,
+.entry-content h2 a:hover, .entry-content h3 a:hover, .entry-content h4 a:hover{
+  color: #1290E8!important;
+}
+
+.entry-content p img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: auto;
+    max-width: 90%;
+    display: block;
+}
+
+.entry-content p img.wp-smiley {
+  display: inline;
+}
+
+h2.storytitle a{
+    font-size: 24px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818!important;
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.article h3{
+    color: #181818;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.post h3 {
+    font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#content #validation {
+    height: 40px;
+}
+
+#content #validation input{
+    border: 1px solid #1290E8;
+    background-color: white;
+    padding: 10px 15px;
+    margin-bottom: 40px;
+    color: #1290E8;
+}
+
+#menu ul li{
+  font-size: 18px;
+  font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

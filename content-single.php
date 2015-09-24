@@ -54,7 +54,7 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
 <?php
     foreach( $coauthors as $coauthor ):
 ?>
-	<div class="author-bio-avatar"><a href="<?php the_coauthor_meta('user_url'); ?>"><?php echo coauthors_get_avatar($coauthor, 80); ?></a></div>
+	<div class="author-bio-avatar"><?php echo coauthors_get_avatar($coauthor, 80); ?></div>
 <?php
     endforeach;
     $description = get_the_coauthor_meta('description');
