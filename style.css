@@ -129,12 +129,7 @@ a {
 	color: #6FC2B7;
 }
 
-a:focus {
-	border-bottom: 3px solid #6FC2B7;
-}
-
-a:hover,
-a:active {
+a:hover {
 	outline: 0;
 	text-decoration: underline;
 }
