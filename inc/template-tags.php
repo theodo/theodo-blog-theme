@@ -75,7 +75,7 @@ function theodo_posted_on() {
 
 	$posted_on = sprintf(
 		_x( ' on %s', 'post date', 'buffer' ),
-		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		 $time_string
 	);
 
 	if ( function_exists( 'coauthors_posts_links' ) ) {
@@ -92,12 +92,12 @@ function theodo_posted_on() {
 	} else {
 		$byline = sprintf(
 			_x( '%s', 'post author', 'buffer' ),
-			'<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . '<span class="author-avatar">' . get_avatar( get_the_author_meta('ID')) . esc_html( get_the_author() ) . '</span></a>'
+			'<a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . '<span class="author-avatar byline">' . get_avatar( get_the_author_meta('ID')) . esc_html( get_the_author() ) . '</span></a>'
 		);
 	}
 
 
-	echo '<span class="byline"> ' . $byline . '<span class="posted-on">' . $posted_on . '</span>';
+	echo $byline . '<span class="posted-on">' . $posted_on . '</span>';
 
 }
 endif;
