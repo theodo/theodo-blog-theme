@@ -424,10 +424,6 @@ big {
 
 @media only screen and (max-width: 500px) {
 
-  .nav-menu li:first-child {
-		display: none;
-	}
-
 	.nav-menu li:hover,
 	.nav-menu li.current {
 		padding-bottom: 2px;
