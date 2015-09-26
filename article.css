@@ -1,103 +1,30 @@
-@charset "UTF-8";
-
-#content hr
-{
-  background-color: #707070;
-  height: 1px;
-  margin:42px 0 24px;
-}
-
-#content div.article ul li
-{
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-#content div.article pre
-{
-  margin: 7px;
-}
-
-#content div.article h4
-{
-  margin-top: 10px;
-}
-
-
-/* cyrillej 2013-07-17 (article content readability improved) */
-#content .entry-content h2,
-#content .entry-content h3 {
-  margin: 2em 0 1em;
-}
-
-#content div.article .illustration {
-  margin: 0 auto;
-  display: block;
-}
-
-#content div.article p {
-  margin-bottom: 1em;
-}
-
-#content div.article pre {
-  margin-bottom: 1.4em;
-    word-wrap: normal;
-    white-space: pre;
-    overflow-x: auto;
-}
-
-#content div.article pre.error {
-  color: #f00;
-}
-
-#content div.article pre .comment {
-  color: #999;
-}
-
-#content div.article pre code {
-    white-space: pre;
-}
-
-.gimme-more {
-  max-height: 200px;
-  overflow: hidden;
-  transition:max-height 1.2s;
-}
-
-.gimme-more:hover {
-  max-height: 900px;
-}
-
-.gimme-more:before {
-  content: '↓ hover for more ↓';
-  display: block;
-  padding-bottom: 2px;
-  border-bottom: 1px dashed #ccc;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #aaa;
-}
+@CHARSET "UTF-8";
 
 /* nicolasgo 2015-07-27 typographic improvements */
 
-.article .meta a, .article .feedback a,
-.entry-content p a:hover, .entry-content ul li a:hover,
-.entry-content ol li a:hover,
-#content p a, #content ul a, #content ol a, #content h2 a, #content h3 a,
-.navbar .nav li.active-blue > a,
-.more_by a, .prev-next a,
-.entry-content h2 a, .entry-content h3 a {
+.single .article .meta a, .single .article .feedback a,
+.single .entry-content p a:hover, .single .entry-content ul li a:hover,
+.single .entry-content ol li a:hover,
+.single #content p a, .single #content ul a, .single #content ol a,
+.single #content h1 a, .single #content h2 a, .single #content h3 a,
+.single .navbar .nav li.active-blue > a,
+.single .more_by a, .single .prev-next a,
+.single .entry-content h2 a, .single .entry-content h3 a {
+  color: #1290E8;
 }
 
 
-.article p, .article ul li, .article ol li, .article p input, .article .meta, .article .feedback, .document{
+.single .article p, .single .article ul li,
+.single .article ol li, .single .article p input,
+.single .article .meta, .single .article .feedback,
+.single .document{
     font-size: 21px;
     font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #181818;
     line-height: 30px;
 }
 
-.article .meta, .article .feedback {
+.single .article .meta, .single .article .feedback {
     font-size: 16px;
 }
 
@@ -156,7 +83,20 @@ code, pre, tt {
     margin-left: -22px;
 }
 
-.entry-content p img{
+
+.single .entry-content p a, .single .entry-content ul li a, .single .entry-content ol li a,
+.single .entry-content h2 a, .single .entry-content h3 a, .single .entry-content h4 a{
+    color: #181818!important;
+    text-decoration: none!important;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 93%, #1290E8 93%);
+}
+
+.single .entry-content p a:hover, .single .entry-content ul li a:hover, .single .entry-content ol li a:hover,
+.single .entry-content h2 a:hover, .single .entry-content h3 a:hover, .single .entry-content h4 a:hover{
+  color: #1290E8!important;
+}
+
+.single .entry-content p img{
     margin-top: 40px;
     margin-bottom: 40px;
     margin: auto;
@@ -164,41 +104,25 @@ code, pre, tt {
     display: block;
 }
 
-.entry-content p img.wp-smiley {
+.single .entry-content p img.wp-smiley {
   display: inline;
 }
 
-h2.storytitle a{
+.single h1 a{
     font-size: 24px;
     font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #181818!important;
     text-shadow: none;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-.article h3{
+.single .article h3{
     color: #181818;
     margin-top: -20px;
     margin-bottom: 10px;
 }
 
-.post h3 {
+.single .post h3 {
     font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-#content #validation {
-    height: 40px;
-}
-
-#content #validation input{
-    border: 1px solid #1290E8;
-    background-color: white;
-    padding: 10px 15px;
-    margin-bottom: 40px;
-    color: #1290E8;
-}
-
-#menu ul li{
-  font-size: 18px;
-  font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
