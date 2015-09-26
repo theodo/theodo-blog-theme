@@ -361,6 +361,7 @@ header .centered {
 	position: relative;
 	height: 3.125rem;
 	overflow: hidden;
+	min-width: 100px;
 }
 
 .nav-menu li div {
