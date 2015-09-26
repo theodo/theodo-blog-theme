@@ -80,12 +80,12 @@ if ( function_exists( 'coauthors_posts_links' ) ) {
 }
 ?>
 	</footer><!-- .entry-footer -->
-
+	<?php
+		// If comments are open or we have at least one comment, load up the comment template.
+		if ( comments_open() || get_comments_number() ) :
+			comments_template();
+		endif;
+	?>
 </article><!-- #post-## -->
-<?php
-	// If comments are open or we have at least one comment, load up the comment template.
-	if ( comments_open() || get_comments_number() ) :
-		comments_template();
-	endif;
-?>
+
 <?php buffer_post_nav(); ?>
