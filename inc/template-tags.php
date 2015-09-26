@@ -74,7 +74,7 @@ function theodo_posted_on() {
 	);
 
 	$posted_on = sprintf(
-		_x( ' on %s', 'post date', 'buffer' ),
+		_x( ' %s', 'post date', 'buffer' ),
 		 $time_string
 	);
 
@@ -87,7 +87,7 @@ function theodo_posted_on() {
 				'<span class="author-avatar">' . coauthors_get_avatar( $coauthor ) . '</span>'
 			);
 		}
-		$byline .= coauthors_posts_links(", ", " & ", null, null, false);
+		$byline .= '<span class="author-url">' . coauthors_posts_links(", ", " & ", "By ", null, false) . '</span>';
 
 	} else {
 		$byline = sprintf(

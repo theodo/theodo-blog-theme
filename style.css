@@ -607,6 +607,11 @@ a[rel="home happiness"]:hover {
 	position: relative;
 }
 
+.author-url {
+	color: #6FC2B7;
+	font-style: italic;
+}
+
 .author-avatar {
 	float: left;
 }
@@ -716,13 +721,11 @@ article {
   text-align: center;
   width: 200px;
 }
-.continue-reading {
-	padding-left: 0;
-	-webkit-transition: padding-left 200ms ease-in-out;
-	        transition: padding-left 200ms ease-in-out;
-}
+
 .continue-reading:hover {
-	padding-left: 10px;
+	background-color: #2859a2;
+	text-decoration: none;
+	color: white;
 }
 
 /*-----------------------------
