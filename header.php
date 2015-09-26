@@ -50,11 +50,4 @@
 
 <div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home <?php bloginfo( 'name' ); ?>" class="site-title"><?php bloginfo( 'name' ); ?></a>
-			<div class="tagline"><?php bloginfo( 'description' ); ?></div>
-		</div>
-	</header><!-- #masthead -->
-
 	<div id="content" class="site-content">
