@@ -673,10 +673,6 @@ article {
 	width: 100%;
 }
 
-.entry-content a:visited {
-	color: #8B959E;
-}
-
 @media only screen and (max-width: 500px) {
 
   article { padding: 40px 5%;}
@@ -724,8 +720,8 @@ article {
 
 .continue-reading:hover {
 	background-color: #2859a2;
-	text-decoration: none;
 	color: white;
+	text-decoration: none;
 }
 
 /*-----------------------------
