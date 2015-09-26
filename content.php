@@ -32,6 +32,8 @@
 	<div class="entry-content">
 
 		<?php if(strstr($post->post_content,'<!--more-->')) { the_content(); } else { the_excerpt(); } ?>
+		<?php echo '<p><a class="continue-reading" href="'. get_permalink($post->ID) . '">Continue Reading &rarr;</a></p>'; ?>
+
 
 		<?php
 			wp_link_pages( array(

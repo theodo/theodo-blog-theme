@@ -139,14 +139,6 @@ function modify_read_more_link() {
 return '<a class="continue-reading" href="' . get_permalink() . '">Continue Reading &rarr;';
 }
 
-// Replaces the excerpt "more" text by a link
-function new_excerpt_more($more) {
-       global $post;
-	return '<p><a class="continue-reading" href="'. get_permalink($post->ID) . '">Continue Reading &rarr;</a></p>';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
-
-
 // Creates/hides inputs for user contact info
 function extra_contact_info($contactmethods) {
     $contactmethods['twitter']    = 'Twitter';
