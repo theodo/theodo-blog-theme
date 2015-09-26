@@ -31,19 +31,21 @@
 
 <body <?php body_class(); ?>>
 	<header class="header">
-		<nav id="nav-wrap" role="navigation">
+		<div class="centered">
 			<a id="logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" /></a>
-			<?php if ( has_nav_menu( 'primary' )  ) : ?>
-					<?php
-						// Primary navigation menu.
-						wp_nav_menu( array(
-							'menu_class'     => 'nav-menu',
-							'theme_location' => 'primary',
-							'walker'         => new Theodo_Nav_Menu_Walker(),
-						) );
-					?>
-			<?php endif; ?>
-		</nav><!-- .main-navigation -->
+			<nav id="nav-wrap" role="navigation">
+				<?php if ( has_nav_menu( 'primary' )  ) : ?>
+						<?php
+							// Primary navigation menu.
+							wp_nav_menu( array(
+								'menu_class'     => 'nav-menu',
+								'theme_location' => 'primary',
+								'walker'         => new Theodo_Nav_Menu_Walker(),
+							) );
+						?>
+				<?php endif; ?>
+			</nav><!-- .main-navigation -->
+		</div>
 	</header>
 
 <div id="page" class="hfeed site">

@@ -187,7 +187,7 @@ class Theodo_Nav_Menu_Walker extends Walker_Nav_Menu
 		$id = apply_filters( 'nav_menu_item_id', 'menu-item-'. $item->ID, $item, $args, $depth );
 		$id = $id ? ' id="' . esc_attr( $id ) . '"' : '';
 
-		$output .= $indent . '<li' . $id . $class_names .'>';
+		$output .= $indent . '<li' . $id . $class_names .'><div>';
 
 		$atts = array();
 		$atts['title']  = ! empty( $item->attr_title ) ? $item->attr_title : '';
@@ -216,5 +216,9 @@ class Theodo_Nav_Menu_Walker extends Walker_Nav_Menu
 		$item_output .= $args->after;
 
 		$output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
+	}
+
+	public function end_el( &$output, $item, $depth = 0, $args = array() ) {
+    $output .= "</div></li>\n";
 	}
 }
