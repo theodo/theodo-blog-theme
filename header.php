@@ -56,6 +56,14 @@
 			</nav><!-- .main-navigation -->
 		</div>
 	</header>
+	<div id="social-menu">
+		<ul>
+			<li class="facebook"><a target="_blank" href="https://www.facebook.com/theodo.fr" title="Facebook">Facebook</a></li>
+			<li class="twitter"><a target="_blank" href="https://twitter.com/theodo" title="Twitter">Twitter</a></li>
+			<li class="linkedin"><a target="_blank" href="http://www.linkedin.com/company/theodo" title="LinkedIn">LinkedIn</a></li>
+			<li class="email"><a href="//theodo.fr/contact" title="Contact">Contact</a></li>
+		</ul>
+	</div>
 
 <div id="page" class="hfeed site">
 

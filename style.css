@@ -140,7 +140,7 @@ a:hover {
 
 #page {
 	max-width: 750px;
-	margin: 15px auto 10rem auto;
+	margin: 0px auto 10rem auto;
 }
 
 /*-----------------------------
@@ -987,4 +987,44 @@ a[rel="tag"] {
 	-webkit-background-clip: padding-box;
 	box-shadow: none;
 	padding: 10px;
+}
+
+
+
+#social-menu {
+	text-align: center;
+}
+#social-menu ul {
+    list-style-type: none;
+    display: inline;
+}
+#social-menu ul li {
+    text-align: left;
+    display: inline-block;
+    width: 41px;
+    height: 40px;
+    margin: 5px;
+}
+#social-menu ul li a {
+    display: block;
+    width: 41px;
+    height: 40px;
+    background: transparent no-repeat 0 0;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+#social-menu ul li a:hover {
+    opacity: 0.5;
+}
+#social-menu ul li.facebook a {
+    background-image: url('images/facebook.png');
+}
+#social-menu ul li.twitter a {
+    background-image: url('images/twitter.png');
+}
+#social-menu ul li.linkedin a {
+    background-image: url('images/linkedin.png');
+}
+#social-menu ul li.email a {
+    background-image: url('images/mail.png');
 }
