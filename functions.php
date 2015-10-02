@@ -89,6 +89,7 @@ add_action( 'widgets_init', 'buffer_widgets_init' );
 function buffer_scripts() {
 	wp_enqueue_style( 'buffer-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'theodo-article-style', get_template_directory_uri() . '/article.css');
+	wp_enqueue_style( 'social-icons', get_template_directory_uri() . '/social-icons/style.css');
 
 	wp_enqueue_script( 'buffer-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 

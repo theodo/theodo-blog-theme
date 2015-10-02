@@ -992,6 +992,8 @@ a[rel="tag"] {
 
 
 #social-menu {
+	margin-top: 10px;
+	margin-bottom: 5px;
 	text-align: center;
 }
 #social-menu ul {
@@ -999,32 +1001,23 @@ a[rel="tag"] {
     display: inline;
 }
 #social-menu ul li {
-    text-align: left;
     display: inline-block;
-    width: 41px;
-    height: 40px;
-    margin: 5px;
+		margin-bottom: 0;
+		margin-top: 0;
 }
 #social-menu ul li a {
     display: block;
-    width: 41px;
-    height: 40px;
-    background: transparent no-repeat 0 0;
-    text-indent: -9999px;
-    overflow: hidden;
+}
+#social-menu ul li a span {
+    font-size: 40px;
+		color: #888;
+}
+#social-menu ul li:nth-child(odd) a span:hover {
+	color: #2859a2;
+}
+#social-menu ul li:nth-child(even) a span:hover {
+	color: #6FC2B7;
 }
 #social-menu ul li a:hover {
-    opacity: 0.5;
-}
-#social-menu ul li.facebook a {
-    background-image: url('images/facebook.png');
-}
-#social-menu ul li.twitter a {
-    background-image: url('images/twitter.png');
-}
-#social-menu ul li.linkedin a {
-    background-image: url('images/linkedin.png');
-}
-#social-menu ul li.email a {
-    background-image: url('images/mail.png');
+		text-decoration: none;
 }
