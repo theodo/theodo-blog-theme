@@ -974,7 +974,8 @@ a[rel="tag"] {
 }
 #social-menu ul li a:hover,
 #social-menu ul li a:visited,
-#social-menu ul li a:active
+#social-menu ul li a:active,
+#social-menu ul li a:focus
  {
 		text-decoration: none;
 }
