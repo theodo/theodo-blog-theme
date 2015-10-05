@@ -281,7 +281,7 @@ article .meta a, article .feedback a,
 .entry-content p a:hover, .entry-content ul li a:hover,
 .entry-content ol li a:hover,
 #content p a, #content ul a, #content ol a,
-#content h1 a, #content h2 a, #content h3 a,
+#content h2 a, #content h3 a,
 .navbar .nav li.active-blue > a,
 .more_by a, .prev-next a,
 .entry-content h2 a, .entry-content h3 a {
@@ -289,9 +289,9 @@ article .meta a, article .feedback a,
 }
 
 
-article p, article ul li,
-article ol li, body .single article p input,
-article .meta, body .single article .feedback,
+.site-content p, .site-content ul li,
+.site-content ol li, .site-content p input,
+.site-content .meta, .site-content .feedback,
 .document{
     font-size: 21px;
     font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -299,7 +299,7 @@ article .meta, body .single article .feedback,
     line-height: 30px;
 }
 
-.single article .meta, .single article .feedback {
+.site-content .meta, .site-content .feedback {
     font-size: 16px;
 }
 
