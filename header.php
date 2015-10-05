@@ -20,7 +20,7 @@
 	<meta name="description" content="Expertises de Theodo : développement symfony PHP agile sur des projets webs complexes">
 	<meta name="keywords" content="symfony, développement symfony, Business intelligence, développement agile">
 	<meta name="robots" content="index, follow">
-	<meta name="og:title" content="<?php the_title(); ?>">
+	<meta property="og:title" content="<?php the_title(); ?>">
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
