@@ -972,6 +972,9 @@ a[rel="tag"] {
 #social-menu .icon-mail:hover {
 	color: #dd4b39;
 }
-#social-menu ul li a:hover {
+#social-menu ul li a:hover,
+#social-menu ul li a:visited,
+#social-menu ul li a:active
+ {
 		text-decoration: none;
 }
