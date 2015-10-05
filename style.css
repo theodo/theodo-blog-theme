@@ -960,11 +960,17 @@ a[rel="tag"] {
     font-size: 40px;
 		color: #888;
 }
-#social-menu ul li:nth-child(odd) a span:hover {
-	color: #2859a2;
+#social-menu .icon-twitter2:hover {
+	color: #00aced;
 }
-#social-menu ul li:nth-child(even) a span:hover {
-	color: #6FC2B7;
+#social-menu .icon-facebook2:hover {
+	color: #3b5998;
+}
+#social-menu .icon-linkedin:hover {
+	color: #007bb5;
+}
+#social-menu .icon-mail:hover {
+	color: #dd4b39;
 }
 #social-menu ul li a:hover {
 		text-decoration: none;
