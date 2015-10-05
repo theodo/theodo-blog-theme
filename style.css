@@ -150,11 +150,11 @@ a:hover {
 body,
 select,
 textarea {
-	color: #323B43;
-	font-family: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: .875rem;
-	font-size: 14px;
-	line-height: 1.2;
+       color: #323B43;
+       font-family: "Open Sans", Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus SansL", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+       font-size: .875rem;
+       font-size: 14px;
+       line-height: 1.2;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -164,51 +164,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	letter-spacing: -0.5px;
 	margin: 0 -2rem;
-}
-
-h2 {
-	font: 200 1.6rem/1.4 "Open Sans";
-	text-rendering: optimizeLegibility;
-}
-
-.entry-content h2:after {
-	background: #CED7DF;
-	content: " ";
-	display: block;
-	height: 1px;
-	margin: 2rem auto;
-	width: 25%;
-}
-
-h3 {
-	font-size: 2rem;
-	margin-bottom: 2rem;
-}
-
-h3:before {
-	background: #CED7DF;
-	content: " ";
-	display: block;
-	height: 1px;
-	margin: 2rem auto;
-	width: 25%;
-}
-
-h4 {
-	font-size: 1.5rem;
-	margin-bottom: 1rem;
-}
-
-h5 {
-	font-size: 1.25rem;
-	margin-bottom: 1rem;
-}
-
-h6 {
-	font-size: 1rem;
-	letter-spacing: 1px;
-	margin-bottom: 1rem;
-	text-transform: uppercase;
 }
 
 p {
@@ -320,6 +275,134 @@ big {
   h1 { margin: 0;}
   h2 { font-size: 1.4rem; }
 
+}
+
+article .meta a, article .feedback a,
+.entry-content p a:hover, .entry-content ul li a:hover,
+.entry-content ol li a:hover,
+#content p a, #content ul a, #content ol a,
+#content h1 a, #content h2 a, #content h3 a,
+.navbar .nav li.active-blue > a,
+.more_by a, .prev-next a,
+.entry-content h2 a, .entry-content h3 a {
+  color: #1290E8;
+}
+
+
+article p, article ul li,
+article ol li, body .single article p input,
+article .meta, body .single article .feedback,
+.document{
+    font-size: 21px;
+    font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 30px;
+}
+
+.single article .meta, .single article .feedback {
+    font-size: 16px;
+}
+
+code, pre, tt {
+    font-family: "source-code-pro", monospace;
+    font-size: 14px;
+}
+
+.entry-content h1{
+    font-size: 32px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 35px;
+    font-weight: bold;
+    margin-top: 25px;
+}
+
+.entry-content h2{
+		margin: 2em 0 1em;
+    font-size: 28px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 35px;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-top: 20px;
+		padding: 20px 0 4px;
+  	clear: both;
+}
+
+.entry-content h3{
+    font-size: 21px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 30px;
+    text-shadow: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.entry-content h4{
+    font-size: 18px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818;
+    line-height: 25px;
+    text-shadow: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.entry-content blockquote{
+    font-weight: lighter;
+    font-style: italic;
+    border-left: 2px solid #181818;
+    padding-left: 20px;
+    margin-left: -22px;
+}
+
+
+.single .entry-content p a, .single .entry-content ul li a, .single .entry-content ol li a,
+.single .entry-content h2 a, .single .entry-content h3 a, .single .entry-content h4 a{
+    color: #181818!important;
+    text-decoration: none!important;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 93%, #1290E8 93%);
+}
+
+.single .entry-content p a:hover, .single .entry-content ul li a:hover, .single .entry-content ol li a:hover,
+.single .entry-content h2 a:hover, .single .entry-content h3 a:hover, .single .entry-content h4 a:hover{
+  color: #1290E8!important;
+}
+
+.single .entry-content p img{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin: auto;
+    max-width: 90%;
+    display: block;
+}
+
+.single .entry-content p img.wp-smiley {
+  display: inline;
+}
+
+.single h1 a{
+    font-size: 24px;
+    font-family: "brandon-grotesque", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #181818!important;
+    text-shadow: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.single article h3{
+    color: #181818;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.single .post h3 {
+    font-family: "chaparral-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /*-----------------------------

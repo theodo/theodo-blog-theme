@@ -34,7 +34,7 @@
 	<script src="https://use.typekit.net/oxr8usm.js"></script>
 	<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	<style type="text/css">.tk-chaparral-pro{font-family:"chaparral-pro",sans-serif;}.tk-brandon-grotesque{font-family:"brandon-grotesque",sans-serif;}.tk-source-code-pro{font-family:"source-code-pro",sans-serif;}</style>
-
+	<link rel="stylesheet" href="https://use.typekit.net/c/e0c17b/1w;brandon-grotesque,7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191,Y2l:W:n4,Y2q:W:n7;chaparral-pro,0ef9b1376f80b53bba8303eb38b8c5b4d636d5ab3e267bbfebde9089ee81d46f,XXw:W:i4,XY8:W:n4,XXk:W:n7;source-code-pro,2,gm0:W:i4,glz:W:n4,gm5:W:n7/l?3bb2a6e53c9684ffdc9a9bf7195b2a62598733aa752328711c758b15539a122671e8ab741601e3387c6599f931584899a0e9f7aa16c72e4ebd2c8698ed34832c57d4698b60372f7785e1bc857e05ca16d6f313c32c457c11d24dfa2859445e4ea96863ecbafbd51ce7672918e771e1ede7" media="all">
 	<?php wp_head(); ?>
 
 </head>
