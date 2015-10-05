@@ -167,3 +167,14 @@ function buffer_category_transient_flusher() {
 }
 add_action( 'edit_category', 'buffer_category_transient_flusher' );
 add_action( 'save_post',     'buffer_category_transient_flusher' );
+
+
+if ( ! function_exists( 'theodo_excerpt_more' ) && ! is_admin() ) :
+/**
+ * Replaces "[...]" (appended to automatically generated excerpts) with ... and a 'Continue reading' link.
+ */
+function theodo_excerpt_more( $more ) {
+	return ' ';
+}
+add_filter( 'excerpt_more', 'theodo_excerpt_more' );
+endif;
