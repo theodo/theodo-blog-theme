@@ -64,7 +64,7 @@
 			<li><a target="_blank" href="https://www.facebook.com/theodo.fr" title="Facebook"><span class="icon-facebook2"></span></a></li>
 			<li><a target="_blank" href="https://twitter.com/theodo" title="Twitter"><span class="icon-twitter2"></span></a></li>
 			<li><a target="_blank" href="http://www.linkedin.com/company/theodo" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
-			<li><a href="//theodo.fr/contact" title="Contact"><span class="icon-mail"></span></a></li>
+			<li><a href="//theodo.fr/contact" title="Contact" target="_blank"><span class="icon-mail"></span></a></li>
 		</ul>
 	</div>
 
