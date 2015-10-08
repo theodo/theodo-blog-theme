@@ -43,30 +43,29 @@
 
 <body <?php body_class(); ?>>
 	<header class="header">
-		<div class="centered">
-			<a id="logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" /></a>
-			<nav id="nav-wrap" role="navigation">
-				<?php if ( has_nav_menu( 'primary' )  ) : ?>
-						<?php
-							// Primary navigation menu.
-							wp_nav_menu( array(
-								'menu_class'     => 'nav-menu',
-								'theme_location' => 'primary',
-								'walker'         => new Theodo_Nav_Menu_Walker(),
-							) );
-						?>
-				<?php endif; ?>
-			</nav><!-- .main-navigation -->
+		<a id="logo" href="<?php echo get_home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.gif" /></a>
+		<nav id="nav-wrap" role="navigation">
+			<?php if ( has_nav_menu( 'primary' )  ) : ?>
+					<?php
+						// Primary navigation menu.
+						wp_nav_menu( array(
+							'menu_class'     => 'nav-menu',
+							'theme_location' => 'primary',
+							'walker'         => new Theodo_Nav_Menu_Walker(),
+						) );
+					?>
+			<?php endif; ?>
+		</nav><!-- .main-navigation -->
+
+		<div id="social-menu">
+			<ul>
+				<li><a target="_blank" href="https://www.facebook.com/theodo.fr" title="Facebook"><span class="icon-facebook2"></span></a></li>
+				<li><a target="_blank" href="https://twitter.com/theodo" title="Twitter"><span class="icon-twitter2"></span></a></li>
+				<li><a target="_blank" href="http://www.linkedin.com/company/theodo" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
+				<li><a href="//theodo.fr/contact" title="Contact" target="_blank"><span class="icon-mail"></span></a></li>
+			</ul>
 		</div>
 	</header>
-	<div id="social-menu">
-		<ul>
-			<li><a target="_blank" href="https://www.facebook.com/theodo.fr" title="Facebook"><span class="icon-facebook2"></span></a></li>
-			<li><a target="_blank" href="https://twitter.com/theodo" title="Twitter"><span class="icon-twitter2"></span></a></li>
-			<li><a target="_blank" href="http://www.linkedin.com/company/theodo" title="LinkedIn"><span class="icon-linkedin"></span></a></li>
-			<li><a href="//theodo.fr/contact" title="Contact" target="_blank"><span class="icon-mail"></span></a></li>
-		</ul>
-	</div>
 
 <div id="page" class="hfeed site">
 

@@ -140,7 +140,7 @@ a:hover {
 
 #page {
 	max-width: 750px;
-	margin: 0px auto 10rem auto;
+	margin: 20px auto 10rem auto;
 }
 
 /*-----------------------------
@@ -408,18 +408,18 @@ code, pre, tt {
 /*-----------------------------
 	05.0 - Module - Top Navigation
 -----------------------------*/
+nav {
+		display: block;
+		max-width: 750px;
+		margin: auto;
+}
+
 .header {
 	background: white;
 	color: #8B959E;
 	width: 100%;
 	height: 50px;
-}
-
-header .centered {
-	margin: 0 auto;
-	max-width: 750px;
-	padding: 0;
-	text-align: justify;
+	box-shadow: 0 0.0625em 0.3125em rgba(0, 0, 0, 0.35);
 }
 
 #logo img{
@@ -428,8 +428,12 @@ header .centered {
 	width: 121px;
 	height: 50px;
 	margin-right: 29px;
+	margin-left: 10px;
 }
-
+.nav-menu {
+	padding: 0;
+	text-align: center;
+}
 .nav-menu:after { /* used to justify nav items */
 	content: " ";
 	display: inline-block;
@@ -438,12 +442,13 @@ header .centered {
 
 .nav-menu li {
 	display: inline-block;
-	font-size: 0.875rem;
+	font-size: 120%;
 	line-height: 2.75rem;
 	position: relative;
 	height: 3.125rem;
 	overflow: hidden;
 	min-width: 100px;
+	width: 33%;
 }
 
 .nav-menu li div {
@@ -940,13 +945,15 @@ a[rel="tag"] {
 
 
 #social-menu {
-	margin-top: 10px;
-	margin-bottom: 5px;
+	position: absolute;
+  top: 5px;
+  right: 5px;
 	text-align: center;
 }
 #social-menu ul {
     list-style-type: none;
     display: inline;
+		padding: 0;
 }
 #social-menu ul li {
     display: inline-block;
@@ -958,7 +965,7 @@ a[rel="tag"] {
 }
 #social-menu ul li a span {
     font-size: 40px;
-		color: #888;
+		color: #AAA;
 }
 #social-menu .icon-twitter2:hover {
 	color: #00aced;
