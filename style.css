@@ -413,6 +413,7 @@ code, pre, tt {
 	color: #8B959E;
 	width: 100%;
 	height: 50px;
+	box-shadow: 0 0.0625em 0.3125em rgba(0, 0, 0, 0.35);
 }
 
 header .centered {
@@ -430,15 +431,9 @@ header .centered {
 	margin-right: 29px;
 }
 
-.nav-menu:after { /* used to justify nav items */
-	content: " ";
-	display: inline-block;
-	width: 100%;
-}
-
 .nav-menu li {
 	display: inline-block;
-	font-size: 0.875rem;
+	font-size: 120%;
 	line-height: 2.75rem;
 	position: relative;
 	height: 3.125rem;
