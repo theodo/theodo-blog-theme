@@ -429,6 +429,7 @@ header .centered {
 	width: 121px;
 	height: 50px;
 	margin-right: 29px;
+	margin-left: 10px;
 }
 
 .nav-menu li {
@@ -438,7 +439,7 @@ header .centered {
 	position: relative;
 	height: 3.125rem;
 	overflow: hidden;
-	min-width: 100px;
+	margin-right: 20px;
 }
 
 .nav-menu li div {
@@ -467,13 +468,14 @@ header .centered {
 	text-decoration: none;
 	-webkit-transition: -webkit-transform 200ms ease-in-out, color 300ms ease;
 	        transition: -webkit-transform 200ms ease-in-out, color 300ms ease;
+	vertical-align: sub;
 }
 
-.nav-menu a:hover {
+/*.nav-menu a:hover {
 	color: #323B43;
 	-webkit-transform: translateY(-8px);
 	        transform: translateY(-8px);
-}
+}*/
 
 .nav-menu a span {
 	background: transparent;
