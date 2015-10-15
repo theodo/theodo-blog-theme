@@ -17,7 +17,7 @@
   		</div>
 
   		<div class="author-info">
-  			<h4 class="author-name"><?php echo $coauthor->user_nicename; ?></h4>
+				<h4 class="author-name"><?php echo $coauthor->display_name; ?></h4>
   			<p>
   				<?php
   					echo $descriptions[$coauthor->ID];
