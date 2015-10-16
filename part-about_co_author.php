@@ -7,7 +7,7 @@
 			$descriptions = get_the_coauthor_meta( 'description' );
 			foreach( $coauthors as $coauthor ):
 		?>
-    <div style="min-height: 96px;">
+    <div style="min-height: 110px;">
   		<div class="author-img">
   			<a href="<?php echo get_author_posts_url( $coauthor->ID, $coauthor->user_nicename ); ?>">
   				<?php
