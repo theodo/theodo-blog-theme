@@ -1,5 +1,5 @@
 //Share Button
-if($('share-button').length) {
+if(document.getElementsByTagName('share-button').length) {
 	new ShareButton({
 		ui: { flyout: "bottom left" },
 		networks: {
