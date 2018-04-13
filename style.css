@@ -69,3 +69,11 @@ share-button .sb-social ul li:before, share-button .sb-social ul li:after {
 share-button .sb-social ul li {
     width: 50px;
 }
+
+/* Syntax Highligther */
+.theodo-code-syntax-highligther {
+    border-radius: 4px;
+}
+.theodo-code-syntax-highligther div.container {
+    margin: 20px !important;
+}
