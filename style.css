@@ -77,3 +77,19 @@ share-button .sb-social ul li {
 .theodo-code-syntax-highligther div.container {
     margin: 20px !important;
 }
+
+/* Jobs header button */
+#menu-item-4154 {
+    background-color: #6ABE9F;
+    width: 90px;
+    text-align: center;
+    height: 30px;
+    line-height: 28px;
+    vertical-align: middle;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+#menu-item-4154 > a {
+    color: white;
+}
