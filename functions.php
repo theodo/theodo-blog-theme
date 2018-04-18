@@ -4,7 +4,7 @@
 function join_us_renderer( $atts ){
     $html = "<hr />";
     $html .= "<p>You liked this article? You'd probably be a good match for our ever-growing tech team at Theodo. ";
-    $html .= "</p><p style=\"text-align: center;\"><a id=\"join-us-post-button\" target=\"_blank\" href=\"//www.theodo.fr/jobs/developpeur\" class=\"button\"></i>Join Us</a></p>";
+    $html .= "</p><p style=\"text-align: center;\"><a id=\"join-us-post-button\" target=\"_blank\" href=\"//www.theodo.fr/jobs/developpeur\"></i>Join Us</a></p>";
     return $html;
 }
 
