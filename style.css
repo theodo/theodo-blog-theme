@@ -93,3 +93,8 @@ share-button .sb-social ul li {
 #menu-item-4154 > a {
     color: white;
 }
+
+/* Join Us post button */
+#join-us-post-button {
+    background-color: #7EBCA1;
+}
