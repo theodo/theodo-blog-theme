@@ -102,3 +102,8 @@ share-button .sb-social ul li {
     padding: 10px;
     border-radius: 10px;
 }
+
+/* Popular posts side bar */
+.wpp-list > li {
+    margin-bottom: 1.5em !important;
+}
