@@ -116,3 +116,8 @@ share-button .sb-social ul li {
 .wpp-list > li {
     margin-bottom: 1.5em !important;
 }
+
+/* Posts listing */
+.post-format {
+    display: none !important;
+}
