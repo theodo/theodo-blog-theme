@@ -103,7 +103,16 @@ share-button .sb-social ul li {
     border-radius: 10px;
 }
 
+/* Side bar */
+#secondary {
+    margin-left: 1.2em;
+}
+
 /* Popular posts side bar */
+.wpp-list {
+    margin-left: unset !important;
+}
+
 .wpp-list > li {
     margin-bottom: 1.5em !important;
 }
