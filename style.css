@@ -121,3 +121,7 @@ share-button .sb-social ul li {
 .post-format {
     display: none !important;
 }
+
+.home .featured-image {
+    display: none;
+}
